@@ -87,8 +87,14 @@ while soma <= 1000:
 print(f"Soma : {soma}")
 -----------------------------------------------------------------------------------------------
 Tarefa 14:
- 
-  
+ soma = 0
+tamanho = 1
+while tamanho <= 50:
+    n = int(input("Numero: "))
+    soma += n
+    media = soma/tamanho
+    tamanho += 1
+    print(f"A média é {media}")
 -----------------------------------------------------------------------------------------------
 Tarefa 15:
   soma = 0
@@ -100,6 +106,18 @@ while True:
 print(f'Soma: {soma}')
 -----------------------------------------------------------------------------------------------
 Tarefa 16:
+    soma = 0
+while True:
+    n = int(input("Numero: "))
+    if n < 0 and n%2 == 0:
+        soma += n
+        print(f"Soma: {soma}")
+        break
+    elif n < 0 and n%2 != 0:
+        print(f"Soma: {soma}")
+        break
+    elif n > 0 and n%2 == 0:
+        soma += n
 ----------------------------------------------------------------------------------------------
 Tarefa 17:
   t = 1
@@ -121,3 +139,44 @@ while x>0:
     x-=1
 print(count)
 --------------------------------------------------------------------------------------------------
+Tarefa 19:
+    count = 0
+while True:
+    n = int(input("Numero: "))
+    if n < 0 and n%2 == 0:
+        count += 1
+        print(f"Quantidade de números pares: {count}")
+        break
+    elif n < 0 and n%2 != 0:
+        print(f"Quantidade de números pares: {count}")
+        break
+    elif n > 0 and n%2 == 0:
+        count += 1
+ --------------------------------------------------------------------------------------------------
+Tarefa 20:
+    count = 0
+tamanho = 0
+while True:
+    n = int(input("Numero: "))
+    if n < 0:
+        result = (count / tamanho)*100
+        print(f"Porcentagem de números pares: {result:.2f}%")
+        break
+    elif n%2 == 0:
+        count += 1
+        tamanho +=1
+    else:
+        tamanho += 1
+--------------------------------------------------------------------------------------------------
+Tarefa 21:
+    soma = 0
+tamanho = 0
+while True:
+    n = int(input("Numero: "))
+    if n < 0:
+        media = soma/tamanho
+        print(f"A média dos números pares é: {media}")
+        break
+    elif n%2 == 0:
+        soma += n
+        tamanho +=1
