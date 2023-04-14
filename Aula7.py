@@ -124,4 +124,4 @@ for i in range(0,101):
  Exemplo 2:
 list = [print(e, end =' ') for e in range(2,101,2) if True]
 ---------------------------------------------------------------------------
-Livro automate the boring stuff
+Livro automatetheboringstuff.com
